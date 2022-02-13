@@ -4,8 +4,6 @@ public class Team {
     private String teamNickName;
     private String playerName;
     private int age, weight, height;
-    private int countPlayers = 0;
-    private int timeCourse;
 
     public Team (String teamNickName) {
         this.teamNickName = teamNickName;
@@ -16,11 +14,10 @@ public class Team {
         this.age = age;
         this.weight = weight;
         this.height = height;
-        countPlayers++;
     }
 
     public int doCourse(Course course){
-        return timeCourse = (course.doCourseSwimLength(age, weight, height) + course.doCourseRunLength(age, weight, height) +
+        return (course.doCourseSwimLength(age, weight, height) + course.doCourseRunLength(age, weight, height) +
                 course.doCourseBicycleRace(age, weight, height));
     }
 
