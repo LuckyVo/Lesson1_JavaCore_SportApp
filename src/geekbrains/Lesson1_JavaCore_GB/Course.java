@@ -45,5 +45,4 @@ public class Course {
         return "Полоса предятсвий перед игроками составляет: плавание: " + swimLength + "м., бег: " + runLength
            + "м., велодлина: " + bicycleRace +"м.";
     }
-
 }
