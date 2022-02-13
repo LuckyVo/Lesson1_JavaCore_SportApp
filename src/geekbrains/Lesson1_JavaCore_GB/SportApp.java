@@ -6,7 +6,7 @@ public class SportApp {
 
         int countPlayers = 1;
         int teamTime = 0;
-        int playerTime = 0;
+        int playerTime;
 
         Team team = new Team("Спартак");
         System.out.println(team.infoTeam());
