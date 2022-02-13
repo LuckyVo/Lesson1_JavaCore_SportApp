@@ -11,7 +11,6 @@ public class Course {
     final int minTimeCourseRun = 1;
     final int maxtimeCoursebBicycleRace = 6;
     final int mintimeCoursebBicycleRace = 4;
-    private int timeCourseSwim, timeCourseRun, timeCoursebBicycleRace;
 
     public Course (int swimLength, int runLength, int bicycleRace){
         this.swimLength = swimLength;
@@ -21,24 +20,24 @@ public class Course {
 
     public int doCourseSwimLength(int age, int weight, int height){
         if (swimLength >= 750 || age <= 25 || weight <= 80 || height <= 185){
-           return timeCourseSwim = (int) (Math.random()*(maxTimeCourseSwim - minTimeCourseSwim) + 2);
+           return (int) (Math.random()*(maxTimeCourseSwim - minTimeCourseSwim) + 2);
         }
-        return timeCourseSwim = (int) ((Math.random()*(maxTimeCourseSwim - minTimeCourseSwim) + 2.5) + minTimeCourseSwim);
+        return (int) ((Math.random()*(maxTimeCourseSwim - minTimeCourseSwim) + 2.5) + minTimeCourseSwim);
     }
 
     public int doCourseRunLength(int age, int weight, int height){
         if (runLength >= 750 || age <= 25 || weight <= 80 || height <= 185){
-            return timeCourseRun = (int) (Math.random()*(maxTimeCourseRun - minTimeCourseRun) + 1.5);
+            return (int) (Math.random()*(maxTimeCourseRun - minTimeCourseRun) + 1.5);
         }
-        return timeCourseRun = (int) ((Math.random()*(maxTimeCourseRun - minTimeCourseRun) + 3) + minTimeCourseRun);
+        return (int) ((Math.random()*(maxTimeCourseRun - minTimeCourseRun) + 3) + minTimeCourseRun);
     }
 
     public int doCourseBicycleRace(int age, int weight, int height){
         if (bicycleRace >= 750 || age <= 25 || weight <= 80 || height <= 185){
-            return timeCoursebBicycleRace = (int) (Math.random()*(maxtimeCoursebBicycleRace -
+            return (int) (Math.random()*(maxtimeCoursebBicycleRace -
                 mintimeCoursebBicycleRace) + 2.5);
         }
-        return timeCoursebBicycleRace = (int) ((Math.random()*(maxtimeCoursebBicycleRace - mintimeCoursebBicycleRace) + 2)
+        return (int) ((Math.random()*(maxtimeCoursebBicycleRace - mintimeCoursebBicycleRace) + 2)
             + mintimeCoursebBicycleRace);
     }
 
